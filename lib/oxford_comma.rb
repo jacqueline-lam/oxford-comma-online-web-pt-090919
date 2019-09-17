@@ -4,8 +4,10 @@ def oxford_comma(array)
     string = ""
     array.each { |element| string += element}
   elsif array.length == 2
-    array.join(" and")  
-  elsif array
+    array.join(" and ")  
+  elsif array >= 3 
+    array[-1] = " and " + array[-1]
+    
 end
 
 
